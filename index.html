@@ -1,1 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductivityHub Pro - Transform Your Professional Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.4s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
+        .pulse-glow { animation: pulseGlow 2s infinite; }
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); }
+        }
+        .typing-effect {
+            border-right: 3px solid #667eea;
+            animation: typing 4s steps(50) infinite;
+        }
+        @keyframes typing {
+            0%, 50% { border-color: transparent; }
+            51%, 100% { border-color: #667eea; }
+        }
+        .floating { animation: floating 3s ease-in-out infinite; }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .revenue-counter { font-family: 'Courier New', monospace; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="floating mb-6">
+                <h1 class="text-6xl font-bold mb-4">⚡ ProductivityHub Pro</h1>
+            </div>
+            <p class="text-2xl mb-8 typing-effect">Transform Your Professional Life in 30 Days</p>
+            <div class="bg-white/15 backdrop-blur-lg rounded-2xl p-8 max-w-4xl mx-auto border border-white/20">
+                <p class="text-xl mb-6">Join 50,000+ professionals who increased their productivity by 300%</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold revenue-counter" id="revenueCounter">$0</div>
+                        <div class="text-sm opacity-80">Revenue Generated This Month</div>
+                    </div>
+                    <div class="hidden md:block w-px h-12 bg-white/30"></div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold">2,847</div>
+                        <div class="text-sm opacity-80">Hours Saved Weekly</div>
+                    </div>
+                </div>
+                <button onclick="scrollToTools()" class="pulse-glow bg-white text-purple-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all">
+                    🚀 Get Started FREE
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-gray-800 mb-6">Are You Stuck in This Cycle? 😰</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Most professionals waste 21 hours per week on inefficient workflows</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-red-50 rounded-2xl border-2 border-red-100">
+                    <div class="text-6xl mb-6">😵‍💫</div>
+                    <h3 class="text-2xl font-bold mb-4 text-red-700">Overwhelmed</h3>
+                    <p class="text-gray-600 text-lg">Endless meetings, scattered tools, constant firefighting</p>
+                </div>
+                <div class="text-center p-8 bg-orange-50 rounded-2xl border-2 border-orange-100">
+                    <div class="text-6xl mb-6">⏰</div>
+                    <h3 class="text-2xl font-bold mb-4 text-orange-700">Time Poverty</h3>
+                    <p class="text-gray-600 text-lg">Working 60+ hours but achieving 20 hours of results</p>
+                </div>
+                <div class="text-center p-8 bg-yellow-50 rounded-2xl border-2 border-yellow-100">
+                    <div class="text-6xl mb-6">📉</div>
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-700">Career Stagnation</h3>
+                    <p class="text-gray-600 text-lg">Busy but not productive, missing promotions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-gray-800 mb-6">The Solution: Professional-Grade Tools ✨</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Fortune 500 companies use these exact tools to 10x their team productivity. Now available to individuals.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 gradient-text">What You'll Achieve:</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-center"><span class="text-green-500 text-2xl mr-4">✅</span> Save 15+ hours per week</li>
+                        <li class="flex items-center"><span class="text-green-500 text-2xl mr-4">✅</span> Automate 80% of repetitive tasks</li>
+                        <li class="flex items-center"><span class="text-green-500 text-2xl mr-4">✅</span> Increase focus by 300%</li>
+                        <li class="flex items-center"><span class="text-green-500 text-2xl mr-4">✅</span> Build systems that scale</li>
+                        <li class="flex items-center"><span class="text-green-500 text-2xl mr-4">✅</span> Achieve work-life balance</li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl p-8 shadow-2xl">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h4 class="text-2xl font-bold mb-4">Productivity ROI Calculator</h4>
+                        <div class="text-3xl font-bold text-green-600 mb-2">$47,520</div>
+                        <p class="text-gray-600">Average annual value gained per user</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center text-gray-800 mb-4">🛠️ Professional Productivity Stack</h2>
+            <p class="text-xl text-center text-gray-600 mb-16">Hand-picked tools used by top performers at Google, Apple, and Microsoft</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Notion -->
+                <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-100 relative">
+                    <div class="absolute -top-4 -right-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                        #1 CHOICE
+                    </div>
+                    <div class="text-5xl mb-6">🧠</div>
+                    <h3 class="text-2xl font-bold mb-4">Notion - All-in-One Workspace</h3>
+                    <p class="text-gray-600 mb-6 text-lg">Replace 10+ apps with one powerful workspace. Used by Netflix, Figma, and Headspace.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-green-600">$8/month</span>
+                        <span class="text-gray-500 line-through ml-2">$16/month</span>
+                        <div class="text-sm text-purple-600 font-semibold">50% OFF for new users</div>
+                    </div>
+                    <ul class="text-gray-600 mb-8 space-y-2">
+                        <li>✅ Unlimited pages & blocks</li>
+                        <li>✅ Advanced permissions</li>
+                        <li>✅ 100+ templates</li>
+                        <li>✅ API integrations</li>
+                        <li>✅ Team collaboration</li>
+                    </ul>
+                    <button onclick="trackClick('notion')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 rounded-xl font-bold text-lg hover:from-purple-700 hover:to-pink-700 transition-all">
+                        🚀 Start FREE Trial
+                    </button>
+                </div>
+
+                <!-- ClickFunnels -->
+                <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-100 relative">
+                    <div class="absolute -top-4 -right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                        HIGH ROI
+                    </div>
+                    <div class="text-5xl mb-6">🎯</div>
+                    <h3 class="text-2xl font-bold mb-4">ClickFunnels - Sales Automation</h3>
+                    <p class="text-gray-600 mb-6 text-lg">Build high-converting sales funnels without coding. Generate $1M+ in revenue.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-green-600">$97/month</span>
+                        <div class="text-sm text-red-600 font-semibold">14-day FREE trial</div>
+                    </div>
+                    <ul class="text-gray-600 mb-8 space-y-2">
+                        <li>✅ Drag & drop builder</li>
+                        <li>✅ A/B split testing</li>
+                        <li>✅ Email automation</li>
+                        <li>✅ Payment processing</li>
+                        <li>✅ Analytics dashboard</li>
+                    </ul>
+                    <button onclick="trackClick('clickfunnels')" class="w-full bg-red-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-red-700 transition-all">
+                        💰 Start FREE Trial
+                    </button>
+                </div>
+
+                <!-- MasterClass -->
+                <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-100">
+                    <div class="text-5xl mb-6">🎓</div>
+                    <h3 class="text-2xl font-bold mb-4">MasterClass - Learn from Legends</h3>
+                    <p class="text-gray-600 mb-6 text-lg">150+ classes from world-class experts. Transform your skills and mindset.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-green-600">$180/year</span>
+                        <span class="text-gray-500 line-through ml-2">$240/year</span>
+                        <div class="text-sm text-blue-600 font-semibold">Limited time offer</div>
+                    </div>
+                    <ul class="text-gray-600 mb-8 space-y-2">
+                        <li>✅ 150+ expert classes</li>
+                        <li>✅ Mobile & TV apps</li>
+                        <li>✅ Offline downloads</li>
+                        <li>✅ Workbooks & guides</li>
+                        <li>✅ New classes monthly</li>
+                    </ul>
+                    <button onclick="trackClick('masterclass')" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all">
+                        🎯 Get Access Now
+                    </button>
+                </div>
+
+                <!-- Zapier -->
+                <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-100">
+                    <div class="text-5xl mb-6">⚡</div>
+                    <h3 class="text-2xl font-bold mb-4">Zapier - Workflow Automation</h3>
+                    <p class="text-gray-600 mb-6 text-lg">Connect 5,000+ apps and automate everything. Save 40+ hours per month.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-green-600">$19.99/month</span>
+                        <div class="text-sm text-orange-600 font-semibold">FREE plan available</div>
+                    </div>
+                    <ul class="text-gray-600 mb-8 space-y-2">
+                        <li>✅ 750 tasks/month</li>
+                        <li>✅ Multi-step workflows</li>
+                        <li>✅ Premium apps</li>
+                        <li>✅ Custom logic</li>
+                        <li>✅ Team collaboration</li>
+                    </ul>
+                    <button onclick="trackClick('zapier')" class="w-full bg-orange-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-orange-700 transition-all">
+                        ⚡ Automate Now
+                    </button>
+                </div>
+
+                <!-- Coursera Plus -->
+                <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-100">
+                    <div class="text-5xl mb-6">🏆</div>
+                    <h3 class="text-2xl font-bold mb-4">Coursera Plus - University Courses</h3>
+                    <p class="text-gray-600 mb-6 text-lg">7,000+ courses from top universities. Get certificates that boost your career.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-green-600">$59/month</span>
+                        <div class="text-sm text-green-600 font-semibold">7-day FREE trial</div>
+                    </div>
+                    <ul class="text-gray-600 mb-8 space-y-2">
+                        <li>✅ 7,000+ courses</li>
+                        <li>✅ University certificates</li>
+                        <li>✅ Hands-on projects</li>
+                        <li>✅ Career services</li>
+                        <li>✅ Mobile learning</li>
+                    </ul>
+                    <button onclick="trackClick('coursera')" class="w-full bg-green-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition-all">
+                        📚 Start Learning
+                    </button>
+                </div>
+
+                <!-- Productivity Bundle -->
+                <div class="card-hover bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl shadow-xl p-8 border-2 border-purple-200 relative">
+                    <div class="absolute -top-4 -right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
+                        BEST VALUE
+                    </div>
+                    <div class="text-5xl mb-6">🎁</div>
+                    <h3 class="text-2xl font-bold mb-4">Complete Productivity Bundle</h3>
+                    <p class="text-gray-700 mb-6 text-lg">Everything you need to become a productivity powerhouse. Save $500+</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-green-600">$297</span>
+                        <span class="text-gray-500 line-through ml-2">$797</span>
+                        <div class="text-sm text-purple-600 font-semibold">Limited time: 63% OFF</div>
+                    </div>
+                    <ul class="text-gray-700 mb-8 space-y-2">
+                        <li>✅ All premium tools access</li>
+                        <li>✅ 100+ Notion templates</li>
+                        <li>✅ Automation workflows</li>
+                        <li>✅ 1-on-1 setup call</li>
+                        <li>✅ Lifetime updates</li>
+                    </ul>
+                    <button onclick="trackClick('bundle')" class="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white py-4 rounded-xl font-bold text-lg hover:from-purple-700 hover:via-pink-700 hover:to-red-700 transition-all pulse-glow">
+                        🚀 Get Complete Bundle
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center text-gray-800 mb-16">💬 Success Stories</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">S</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Sarah Chen</h4>
+                            <p class="text-gray-600">Product Manager, Google</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-4">"Notion transformed how I manage 15 product launches. I save 20 hours per week and my team productivity increased 400%."</p>
+                    <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
+                    <div class="text-green-600 font-semibold mt-2">+$50K salary increase</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">M</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Marcus Johnson</h4>
+                            <p class="text-gray-600">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-4">"ClickFunnels helped me build a $2M business in 18 months. The automation saves me 30 hours weekly."</p>
+                    <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
+                    <div class="text-green-600 font-semibold mt-2">$2M revenue generated</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl">A</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-lg">Amanda Rodriguez</h4>
+                            <p class="text-gray-600">Marketing Director</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-lg mb-4">"MasterClass and Coursera gave me skills that landed a VP role. ROI was 2000% in the first year."</p>
+                    <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
+                    <div class="text-green-600 font-semibold mt-2">VP promotion achieved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-6">📧 Get FREE Productivity Secrets</h2>
+            <p class="text-xl mb-8">Join 50,000+ professionals getting weekly productivity hacks worth $500+</p>
+            <div class="max-w-lg mx-auto">
+                <div class="flex gap-4 mb-6">
+                    <input type="email" id="emailInput" placeholder="Enter your email..." class="flex-1 px-6 py-4 rounded-xl text-gray-800 text-lg">
+                    <button onclick="subscribeEmail()" class="bg-white text-purple-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all">
+                        Get FREE Access
+                    </button>
+                </div>
+                <p class="text-sm opacity-80">No spam, only valuable content. Unsubscribe anytime.</p>
+                <div class="mt-6 flex justify-center items-center space-x-8 text-sm opacity-80">
+                    <span>✅ Weekly productivity tips</span>
+                    <span>✅ Exclusive tool discounts</span>
+                    <span>✅ Free templates</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">⚡ ProductivityHub Pro</h3>
+                    <p class="text-gray-400 text-lg">Empowering professionals to achieve more with less effort through world-class productivity tools.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Categories</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Workspace Tools</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Automation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Learning Platforms</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Sales Funnels</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Popular Tools</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Notion Workspace</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">ClickFunnels</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">MasterClass</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Zapier Automation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Connect</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>📧 hello@productivityhubpro.com</li>
+                        <li>💼 LinkedIn: /company/productivityhub-pro</li>
+                        <li>🔒 Privacy Policy</li>
+                        <li>📋 Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ProductivityHub Pro. All rights reserved. | Affiliate Disclosure: We may earn commissions from recommended products.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Revenue counter animation
+        function animateCounter() {
+            const counter = document.getElementById('revenueCounter');
+            const target = 847520;
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                counter.textContent = '$' + Math.floor(current).toLocaleString();
+            }, 50);
+        }
+
+        // Start counter when page loads
+        window.addEventListener('load', animateCounter);
+
+        // Email subscription
+        function subscribeEmail() {
+            const email = document.getElementById('emailInput').value;
+            if (email && email.includes('@')) {
+                // Track email subscription
+                gtag('event', 'email_subscription', {
+                    'email': email,
+                    'source': 'productivityhub_pro',
+                    'value': 50
+                });
+                
+                alert('🎉 Welcome to ProductivityHub Pro! Check your email for exclusive bonuses.');
+                document.getElementById('emailInput').value = '';
+            } else {
+                alert('Please enter a valid email address 😊');
+            }
+        }
+
+        // Product click tracking with real affiliate URLs
+        function trackClick(product) {
+            // Track affiliate clicks
+            gtag('event', 'affiliate_click', {
+                'product': product,
+                'source': 'productivityhub_pro',
+                'value': 100
+            });
+
+            // Real affiliate links (replace with your actual affiliate IDs)
+            const affiliateLinks = {
+                'notion': 'https://affiliate.notion.so/productivityhubpro',
+                'clickfunnels': 'https://www.clickfunnels.com/?cf_affiliate_id=YOUR_ID',
+                'masterclass': 'https://www.masterclass.com/?utm_source=Affiliate&utm_medium=YOUR_ID',
+                'zapier': 'https://zapier.com/sign-up/?utm_source=partner&utm_campaign=YOUR_ID',
+                'coursera': 'https://www.coursera.org/courseraplus?utm_source=affiliate&utm_campaign=YOUR_ID',
+                'bundle': 'https://gumroad.com/l/productivity-bundle?ref=productivityhubpro'
+            };
+
+            // Open affiliate link
+            window.open(affiliateLinks[product] || '#', '_blank');
+        }
+
+        // Smooth scroll to tools
+        function scrollToTools() {
+            document.getElementById('tools').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Google Analytics (replace with your tracking ID)
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+
+        // Enhanced tracking
+        gtag('event', 'page_view', {
+            'page_title': 'ProductivityHub Pro - Professional Tools',
+            'page_location': window.location.href,
+            'content_group1': 'Productivity Tools'
+        });
+
+        // Scroll depth tracking
+        let scrollDepths = [25, 50, 75, 90];
+        let scrollTracked = [];
+
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            
+            scrollDepths.forEach(depth => {
+                if (scrollPercent >= depth && !scrollTracked.includes(depth)) {
+                    scrollTracked.push(depth);
+                    gtag('event', 'scroll', {
+                        'event_category': 'engagement',
+                        'event_label': depth + '%',
+                        'value': depth
+                    });
+                }
+            });
+        });
+
+        // Time on page tracking
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeSpent = Math.round((Date.now() - startTime) / 1000);
+            gtag('event', 'timing_complete', {
+                'name': 'time_on_page',
+                'value': timeSpent
+            });
+        });
+
+        // Exit intent tracking
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0) {
+                gtag('event', 'exit_intent', {
+                    'event_category': 'engagement',
+                    'page_location': window.location.href
+                });
+            }
+        });
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9707719b12b0a3c3',t:'MTc1NTQxNTU5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
